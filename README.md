@@ -57,5 +57,18 @@ Papers on using Large Language Models to design acquisition functions, adapt GP 
 | [FunBO: Discovering Acquisition Functions for Bayesian Optimization with FunSearch](https://openreview.net/pdf?id=XjbJR9374o) | ICML 2025 | 2025 | Uses FunSearch (LLM-driven program search) to discover novel acquisition functions written as executable code. Discovered AFs generalize both in- and out-of-distribution, outperforming established general-purpose AFs and rivaling task-specific learned AFs. |
 | [CAKE: Adaptive Kernel Design for Bayesian Optimization with LLMs](https://arxiv.org/abs/2509.17998) | NeurIPS 2025 | 2025 | Proposes Context-Aware Kernel Evolution (CAKE), using LLMs as crossover/mutation operators to adaptively generate and refine GP kernels from observed data. Pairs with BAKER (BIC-based kernel ranking) to select the best kernel per iteration. Consistently outperforms baselines on HPO, controller tuning, and photonic chip design. |
 
+---
+
+## LLM for Symbolic Regression & Scientific Equation Discovery
+
+Papers on using Large Language Models to discover symbolic equations, guide symbolic regression search, and benchmark scientific equation discovery.
+
+| Paper | Venue | Year | Description |
+|-------|-------|------|-------------|
+| [LLM-SR: Scientific Equation Discovery via Programming with Large Language Models](https://proceedings.iclr.cc/paper_files/paper/2025/hash/28df8e730c054c5331855fd4d5403ba9-Abstract-Conference.html) | ICLR 2025 Oral | 2025 | Central work on LLM-assisted symbolic regression. Treats equations as programs: an LLM proposes equation skeletons using scientific priors, parameters are fitted against data, and evolutionary search refines the program space. |
+| [In-Context Symbolic Regression: Leveraging Large Language Models for Function Discovery](https://aclanthology.org/2024.acl-srw.49/) | ACL SRW 2024 | 2024 | Iteratively prompts an LLM to propose and refine functional forms from observed data, while an external optimizer fits coefficients. Matches or exceeds strong SR baselines on several benchmarks with simpler equations. |
+| [LLM-SRBench: A New Benchmark for Scientific Equation Discovery with Large Language Models](https://openreview.net/forum?id=SyQPiZJVWY) | ICML 2025 Oral | 2025 | Benchmark with 239 challenging problems across four scientific domains, designed to evaluate genuine discovery ability and reduce memorization of familiar equations. |
+| [Symbolic Regression with a Learned Concept Library](https://papers.nips.cc/paper_files/paper/2024/hash/4ec3ddc465c6d650c9c419fb91f1c00a-Abstract-Conference.html) | NeurIPS 2024 | 2024 | Introduces LaSR, which combines evolutionary symbolic regression with an LLM-induced library of reusable abstract concepts distilled from high-performing hypotheses, improving search beyond PySR-style baselines. |
+| [ChatSR: Conversational Symbolic Regression](https://openreview.net/forum?id=zsVZCiYG2r) | ICLR 2025 Withdrawn Submission | 2024 | Uses multimodal LLMs for conversational symbolic regression, allowing users to steer expression generation with natural-language constraints and domain priors. |
 
 
